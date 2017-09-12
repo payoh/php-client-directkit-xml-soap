@@ -14,7 +14,7 @@ $response = $client->RegisterWallet(array(
     "walletIp" 						=> getUserIP(),
     "walletUa" 						=> UA,
     "wallet" 						=> $payerWallet,
-    "clientMail" 					=> $payerWallet . "@lemonway.com",
+    "clientMail" 					=> $payerWallet . "@payoh.me",
 	"clientFirstName" 				=> "Payer",
 	"clientLastName" 				=> "Payer"
 ));
@@ -47,7 +47,7 @@ $response = $client->RegisterWallet(array(
     "walletIp" 						=> getUserIP(),
     "walletUa" 						=> UA,
     "wallet" 						=> $receiverWallet,
-    "clientMail" 					=> $receiverWallet . "@lemonway.com",
+    "clientMail" 					=> $receiverWallet . "@payoh.me",
 	"clientFirstName" 				=> "Receiver",
 	"clientLastName" 				=> "Receiver"
 ));
@@ -63,7 +63,7 @@ $response = $client->GetWalletDetails(array(
     "version" 	=> VERSION,
     "walletIp" 	=> getUserIP(),
     "walletUa" 	=> UA,
-    "email" 	=> $receiverWallet . "@lemonway.com"
+    "email" 	=> $receiverWallet . "@payoh.me"
 ));
 //print the response
 echo "---------- Receiver Wallet: " . $receiverWallet . " ----------";
@@ -78,7 +78,7 @@ $response = $client->UpdateWalletDetails(array(
     "walletIp" 	=> getUserIP(),
     "walletUa" 	=> UA,
     "wallet" 	=> $receiverWallet,
-    "newEmail" 	=> "new-" . $receiverWallet . "@lemonway.com"
+    "newEmail" 	=> "new-" . $receiverWallet . "@payoh.me"
 ));
 //print the response
 echo "---------- Update email of Receiver: " . $receiverWallet . " ----------";
